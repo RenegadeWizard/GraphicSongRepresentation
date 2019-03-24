@@ -1,0 +1,27 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+
+<?import javafx.scene.layout.VBox?>
+<BorderPane fx:controller="sample.Controller"
+            xmlns:fx="http://javafx.com/fxml" stylesheets="@controller.css">
+    <left>
+        <VBox fx:id="leftPane" prefWidth="200" alignment="TOP_CENTER" >
+            <padding> <Insets top="10" left="0" right="0" bottom="10"/> </padding>
+            <VBox spacing="20" alignment="TOP_CENTER">
+                <padding> <Insets top="0" left="0" right="0" bottom="20"/> </padding>
+                <Label text="logo" fx:id="logo"/>
+                <Button text="Odśwież" fx:id="refresh" styleClass="redButton" prefWidth="160" prefHeight="40" onAction="#refreshPage" />
+            </VBox>
+            <VBox fx:id="VboxDoPaska">
+                <Button text="Dzień" fx:id="day" styleClass="normalButton" prefWidth="200" prefHeight="50" onAction="#dayButton" />
+                <Button text="Ulubione" fx:id="fav" styleClass="normalButton" prefWidth="200" prefHeight="50" onAction="#favoriteButton" />
+                <Button text="Ustawienia" fx:id="sett" styleClass="normalButton" prefWidth="200" prefHeight="50" onAction="#settingsButton"/>
+            </VBox>
+        </VBox>
+    </left>
+
+</BorderPane>

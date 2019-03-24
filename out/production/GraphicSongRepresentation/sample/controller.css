@@ -1,0 +1,58 @@
+.root{
+    -fx-background-color: #eee;
+}
+
+#leftPane{
+    -fx-background-color: #342f38;
+}
+
+#logo{
+    -fx-text-fill: #eeeeee;
+}
+
+.button{
+    -fx-font-size: 15px;
+}
+
+.redButton{
+    -fx-background-color: #f80200;
+    -fx-text-fill: #eee;
+}
+
+.redButton:hover{
+    -fx-background-color: #e70100;
+    -fx-text-fill: #ddd;
+    -fx-cursor: hand;
+}
+
+.normalButton{
+    -fx-background-color: #342f38;
+    -fx-text-fill: #999;
+    /*-fx-alignment: center-left;*/
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #453f49;
+    -fx-border-insets: 0;
+}
+
+
+.normalButton:hover{
+    -fx-background-color: #231e27;
+    -fx-text-fill: #eee;
+    -fx-cursor: hand;
+}
+
+.normalButton:pressed{
+    -fx-background-color: #231e27;
+    -fx-text-fill: #eee;
+}
+
+.clickedButton{
+    -fx-background-color: #231e27;
+    -fx-text-fill: #eee;
+    /*-fx-alignment: center-left;*/
+}
+
+#VboxDoPaska{
+    -fx-border-width: 1 0 0 0;
+    -fx-border-color: #453f49;
+}
